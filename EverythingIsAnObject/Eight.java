@@ -12,11 +12,11 @@ public class Eight {
             object = new Eight();
 
             System.out.println("Suma número "+i+":");
-            System.out.println("\tValor del estático: "+object.trueStatic);
+          //  System.out.println("\tValor del estático: "+object.trueStatic);
             System.out.println("\tValor sel NO estático: "+object.falseStatic);
             System.out.println("___________________________________\n");
 
-            ++object.trueStatic;
+        //    ++object.trueStatic;
             ++object.falseStatic;
         }
     }
