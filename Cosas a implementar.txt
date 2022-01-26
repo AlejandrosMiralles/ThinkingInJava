@@ -1,0 +1,5 @@
+-Programar usan los operadores bitwise
+
+-Usar ternary if-else
+
+-Hacer to-String haciendo: "" + variable
