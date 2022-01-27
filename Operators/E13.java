@@ -1,3 +1,5 @@
+package Operators;
+
 class E13 {
     static String charToBinary(char character){
         return Integer.toBinaryString(Character.getNumericValue(character));

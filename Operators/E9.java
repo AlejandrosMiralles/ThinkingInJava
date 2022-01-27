@@ -1,4 +1,6 @@
-public class E9 {
+package Operators;
+
+class E9 {
     public static void main(String[] args) {
 
         System.out.printf("Float:\n\tMáximo: %e\n\tMínimo: %e\n\n", Float.MAX_VALUE, Float.MIN_VALUE);

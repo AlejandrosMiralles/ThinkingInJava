@@ -1,4 +1,6 @@
-public class E5Dog {
+package Operators;
+
+class E5Dog {
     String name;
     String says;
 

@@ -1,4 +1,6 @@
-public class E10 {
+package Operators;
+
+class E10 {
     public static void main(String[] args) {
         int num1 = 0xA8C5;
         int num2 = 0xB39A;

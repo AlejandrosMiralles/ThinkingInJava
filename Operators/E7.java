@@ -1,6 +1,8 @@
+package Operators;
+
 import java.util.Date;
 
-public class E7 {
+class E7 {
     public static void main(String[] args) {
         Date object = new Date();
 

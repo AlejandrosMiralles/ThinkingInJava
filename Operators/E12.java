@@ -1,4 +1,6 @@
-public class E12 {
+package Operators;
+
+class E12 {
 
     static void printVariable(int variable){ System.out.println("Hexagesimal: "+Integer.toHexString(variable)+"\t\tBinary: "+Integer.toBinaryString(variable));}
     public static void main(String[] args) {
