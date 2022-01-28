@@ -1,0 +1,189 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch E1Print1Al100",
+            "request": "launch",
+            "mainClass": "ControllingExecution.E1Print1Al100",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E2CompareRandomNumbers",
+            "request": "launch",
+            "mainClass": "ControllingExecution.E2CompareRandomNumbers",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E4CheckingPrimeNumbers",
+            "request": "launch",
+            "mainClass": "ControllingExecution.E4CheckingPrimeNumbers",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E5ModifyE10",
+            "request": "launch",
+            "mainClass": "ControllingExecution.E5ModifyE10",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dos",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Dos",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Eight",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Eight",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Four",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Four",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Nine",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Nine",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Seven",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Seven",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Six",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Six",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ten",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Ten",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Three",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Three",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Twelve",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Twelve",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uno",
+            "request": "launch",
+            "mainClass": "EverythingIsAnObject.Uno",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E10",
+            "request": "launch",
+            "mainClass": "Operators.E10",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E11",
+            "request": "launch",
+            "mainClass": "Operators.E11",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E12",
+            "request": "launch",
+            "mainClass": "Operators.E12",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E13",
+            "request": "launch",
+            "mainClass": "Operators.E13",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E14",
+            "request": "launch",
+            "mainClass": "Operators.E14",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E2",
+            "request": "launch",
+            "mainClass": "Operators.E2",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E4",
+            "request": "launch",
+            "mainClass": "Operators.E4",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E5Dog",
+            "request": "launch",
+            "mainClass": "Operators.E5Dog",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E7",
+            "request": "launch",
+            "mainClass": "Operators.E7",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E8",
+            "request": "launch",
+            "mainClass": "Operators.E8",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E9",
+            "request": "launch",
+            "mainClass": "Operators.E9",
+            "projectName": "ThinkingInJava_b673767f"
+        }
+    ]
+}
