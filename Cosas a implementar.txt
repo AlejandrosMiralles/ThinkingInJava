@@ -1,4 +1,4 @@
--Programar usan los operadores bitwise
+-Programar usando los operadores bitwise
 
 -Usar ternary if-else
 
