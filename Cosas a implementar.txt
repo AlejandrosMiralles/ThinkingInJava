@@ -3,3 +3,5 @@
 -Usar ternary if-else
 
 -Hacer to-String haciendo: "" + variable
+
+-Tratar más a los Chars como integers. Tipo: int c = Math.random(26) + 'a';
