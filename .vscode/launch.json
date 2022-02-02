@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E8DontDoThis",
+            "request": "launch",
+            "mainClass": "InitializationAndCleanUp.E8DontDoThis",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E1initilNull",
+            "request": "launch",
+            "mainClass": "InitializationAndCleanUp.E1initilNull",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
