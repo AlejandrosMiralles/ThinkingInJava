@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E16CreatingStringArrays",
+            "request": "launch",
+            "mainClass": "InitializationAndCleanUp.E16CreatingStringArrays",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
             "name": "Launch E8DontDoThis",
             "request": "launch",
             "mainClass": "InitializationAndCleanUp.E8DontDoThis",

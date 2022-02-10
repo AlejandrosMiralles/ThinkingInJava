@@ -5,3 +5,7 @@
 -Hacer to-String haciendo: "" + variable
 
 -Tratar más a los Chars como integers. Tipo: int c = Math.random(26) + 'a';
+
+-Usar las vargs
+
+-Usar algún Enum (son útiles con switches)
