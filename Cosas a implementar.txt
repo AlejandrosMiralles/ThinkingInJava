@@ -9,3 +9,5 @@
 -Usar las vargs
 
 -Usar algún Enum (son útiles con switches)
+
+-Poner final en las variables, (me libra de errores de polimorfismo) métodos, clases o atributos

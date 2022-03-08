@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exercise17",
+            "request": "launch",
+            "mainClass": "Polymorphism.Exercise17",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise12",
+            "request": "launch",
+            "mainClass": "Polymorphism.Exercise12",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise10",
+            "request": "launch",
+            "mainClass": "Polymorphism.Exercise10",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise9",
+            "request": "launch",
+            "mainClass": "Polymorphism.Exercise9",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise1",
+            "request": "launch",
+            "mainClass": "Polymorphism.Exercise1",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
             "name": "Launch E16CreatingStringArrays",
             "request": "launch",
             "mainClass": "InitializationAndCleanUp.E16CreatingStringArrays",
