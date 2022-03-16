@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exercise16",
+            "request": "launch",
+            "mainClass": "Interfaces.Exercise16",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise5",
+            "request": "launch",
+            "mainClass": "Interfaces.Exercise5",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise3",
+            "request": "launch",
+            "mainClass": "Interfaces.Exercise3",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
             "name": "Launch Exercise17",
             "request": "launch",
             "mainClass": "Polymorphism.Exercise17",
