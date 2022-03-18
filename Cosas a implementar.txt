@@ -2,8 +2,6 @@
 
 -Usar ternary if-else
 
--Hacer to-String haciendo: "" + variable
-
 -Tratar más a los Chars como integers. Tipo: int c = Math.random(26) + 'a';
 
 -Usar las vargs
@@ -11,3 +9,9 @@
 -Usar algún Enum (son útiles con switches)
 
 -Poner final en las variables, (me libra de errores de polimorfismo) métodos, clases o atributos
+
+-Preocuparme más por la visibilidad. Sobre todo de los atributos (a private)
+
+-Probar a utilizar más clases internas.
+
+-Intentar evitar más los números mágicos.
