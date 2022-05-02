@@ -18,7 +18,7 @@ public class Exercise16 implements Readable {
 
     public int read(CharBuffer cb) throws IOException {
         
-        if (endRedability-- == 0){ throw IOException;}
+        if (endRedability-- == 0){ throw new IOException();}
 
         String toRead = "";
         Random randomizer = new Random();

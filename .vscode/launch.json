@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex7PatternExercise",
+            "request": "launch",
+            "mainClass": "String.Ex7PatternExercise",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex6FormattingNumbers",
+            "request": "launch",
+            "mainClass": "String.Ex6FormattingNumbers",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch E7BreakAnInfinite",
+            "request": "launch",
+            "mainClass": "ControllingExecution.E7BreakAnInfinite",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExThreeTurtleErr",
+            "request": "launch",
+            "mainClass": "String.ExThreeTurtleErr",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise3TurtleaErr",
+            "request": "launch",
+            "mainClass": "String.Exercise3TurtleaErr",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
             "name": "Launch Exercise21_InnerClassesInInterface",
             "request": "launch",
             "mainClass": "InnerClasses.Exercise21_InnerClassesInInterface",
