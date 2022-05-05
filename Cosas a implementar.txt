@@ -12,4 +12,4 @@
 
 -Intentar evitar más los números mágicos.
 
--Usar más expresiones regulares
+-Usar más expresiones regulares (y aprender más de ellas)
