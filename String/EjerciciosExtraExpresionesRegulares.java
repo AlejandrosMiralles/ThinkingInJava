@@ -5,13 +5,53 @@ import java.util.regex.Matcher;
 
 public class EjerciciosExtraExpresionesRegulares {
     public static void main(String[] args) {
-        System.out.println(W3ResourcesRE.diez("00100.0010.0100.0200"));
-        System.out.println(W3ResourcesRE.diez("132400.032410.9100.0200"));
+        System.out.println(W3ResourcesRE.diecinueve("qrss"));
+        System.out.println(W3ResourcesRE.diecinueve("sdcsdocsmqqpwqer"));
     }
 }
 
 //https://www.w3resource.com/java-exercises/re/index.php
 class W3ResourcesRE{
+
+    static String diecinueve(String string){
+        final char[] specificCharacterToRemove = {'q', 'r', 's'};
+        for (char c : specificCharacterToRemove) {
+            string = string.replaceAll("" + c, "");
+        }
+        return string;
+    }
+
+    static boolean deiciocho(int string){
+        return Pattern.matches("\\d{4}|\\d{6}|\\d{8}", string + "");
+    }
+
+    static int deicisiete(int string){
+        return ("" + string).length();
+    }
+
+    static String dieciseis(String string, char replacement){
+        return string.replaceAll("[aeiou]", "" + replacement);
+    }
+
+    static String quince(String string){
+        return string.replaceAll("[aeiou]", "");
+    }
+
+    static int catorce(String string){
+        return string.replaceAll("(?i)[^aeiou]", "").length();
+    }
+
+    static String trece(String string){
+        return (Pattern.matches("(?i).*python.*", string)) ? "Java" : "C++";
+    }
+
+    static String doce(String string){
+        string = string.replaceAll("Python", "Java")  ;
+        string = string.replaceAll("code", "coding")  ;
+
+        return string;
+    }
+
     static boolean once(String frase, int numeroAAcabar){
         boolean loContiene;
 
