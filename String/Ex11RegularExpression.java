@@ -1,7 +1,5 @@
 package String;
 
-import java.util.regex.Pattern;
-
 public class Ex11RegularExpression {
     public static void main(String[] args) {
         String frase ="Airline ate eight apples and one orange ile anita adnt any";
