@@ -13,3 +13,5 @@
 -Intentar evitar más los números mágicos.
 
 -Usar más expresiones regulares (y aprender más de ellas)
+
+-Aprender y mejorar mi uso de los navegadores web (usar atajos de teclado como ctrl+Tab, usar comandos tipo OR, etc.)
