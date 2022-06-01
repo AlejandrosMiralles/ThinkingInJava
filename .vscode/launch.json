@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex20DiscoveringInfoAboutAClass",
+            "request": "launch",
+            "mainClass": "TypeInformation.Ex20DiscoveringInfoAboutAClass",
+            "projectName": "ThinkingInJava_b673767f"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex8And9DiscoveringHierarchyAtRT",
             "request": "launch",
             "mainClass": "TypeInformation.Ex8And9DiscoveringHierarchyAtRT",
