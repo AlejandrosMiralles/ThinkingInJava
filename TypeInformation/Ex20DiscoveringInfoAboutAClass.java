@@ -2,37 +2,64 @@ package TypeInformation;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 import java.util.ArrayList;
 
 /**
  * Intentar hacer un programa que, dada una clase dese la linea de comandos, sea capaz de imprimir todos 
  * los atributos(visibilidad,statica/final o no, tipo, nombre y valor(si tiene) ) y
- *               métodos(visibilidad,statica/final o no, objeto a devolver, nombre, parametros y excepciones) 
- * que esta clase y sus padres puedan tener. Además del nombre de su clase y el paquete, sus padres y las interfaces
- * 
- * TODO: depurar con clases con metodos y atributos privados(incluso si son de sus padres), +
- * clases que sean arrays, que tengan constructores y más cosas "extrañas". 
- * Mirar los métodos de la clase Class<T> para saber qué checkear
+ * métodos(visibilidad,statica/final o no, objeto a devolver, nombre, parametros y excepciones) que esta
+ * clase y sus padres puedan tener. Además del nombre de su clase y el paquete, sus padres y las 
+ * interfaces
  */
 public class Ex20DiscoveringInfoAboutAClass {
 
     public static void imprimirAtributos(Class<?> claseAAnalizar){
-        Field[] atributos = claseAAnalizar.getFields();
+        Field[] atributos = claseAAnalizar.getDeclaredFields();
 
         StringBuilder descripcionDelCampoAImprimir;
         for (Field field : atributos) {
             descripcionDelCampoAImprimir = new StringBuilder();
+            
+            int fieldModifier = field.getModifiers();
 
-            //TODO: hacer algo para sacar su visibilidad, si es estatica o no y si es final o no
+            //Visibility
+            String visibility;
+            if (Modifier.isPublic(fieldModifier)){
+                visibility = "public ";
+            }else if (Modifier.isProtected(fieldModifier)){
+                visibility = "protected ";
+            }else if (Modifier.isPrivate(fieldModifier)){
+                visibility = "private ";
+            }else{ //Si no es ninguna de las anteriores, la visibilidad será de paquetes
+                visibility = "";
+            }
+            descripcionDelCampoAImprimir.append(visibility);
+
+           //Static or instance field
+            descripcionDelCampoAImprimir.append((Modifier.isStatic(fieldModifier))? "static " : "" );
+
+            //Final
+            descripcionDelCampoAImprimir.append((Modifier.isFinal(fieldModifier))? "final " : "" );
 
             //Tipo
-            descripcionDelCampoAImprimir.append(field.getType().getSimpleName() + " ");
+            descripcionDelCampoAImprimir.append(field.getType().getSimpleName());
+            descripcionDelCampoAImprimir.append(' ');
             
             //Nombre
-            descripcionDelCampoAImprimir.append(field.getName() + " ");
+            descripcionDelCampoAImprimir.append(field.getName() );
             
-            //Valor ??
+            //Valor por defecto del campo (si es estatico)
+            try {
+                Object valorEstatico;
+                valorEstatico = field.get(null);
+                descripcionDelCampoAImprimir.append(" = " + valorEstatico.getClass().getSimpleName());
+            } catch (NullPointerException e) {
+                //Nothing. It means that it's an instance field and it doesn't have any default value
+            } catch (IllegalAccessException e){
+                // En teoría nunca debería llegar aquí porque ya se ha accedido al campo
+            }
 
             //Fin del atributo
             descripcionDelCampoAImprimir.append(";");
@@ -47,13 +74,28 @@ public class Ex20DiscoveringInfoAboutAClass {
         StringBuilder descripcionDelMetodoAImprimir;
         for (Method method : metodos) {
             descripcionDelMetodoAImprimir = new StringBuilder();
-            //TODO: falta checkear si el metodo es final/abstract o no y su visibilidad
 
-            //El metodo es static o no
-            //TODO: depurar esto. isDefault devuelve los metodos abstractos o estaticos
-            if ( method.isDefault()){
-                descripcionDelMetodoAImprimir.append("static ");
+            int methodModifier = method.getModifiers();
+
+            //Visibilidad
+            String access;
+            if (Modifier.isPublic(methodModifier)){
+                access = "public ";
+            }else if (Modifier.isPrivate(methodModifier)){
+                access = "private ";
+            }else if (Modifier.isProtected(methodModifier)){
+                access = "protected ";
+            }else{ //La visibilidad solo puede ser de paquetes
+                access = "";
             }
+            descripcionDelMetodoAImprimir.append(access);
+
+            //final o abstract
+            if (Modifier.isFinal(methodModifier)){ descripcionDelMetodoAImprimir.append("final ");}
+            else if (Modifier.isAbstract(methodModifier)){ descripcionDelMetodoAImprimir.append("abstract ");}
+
+            //estatico o de instancia
+            descripcionDelMetodoAImprimir.append((Modifier.isStatic(methodModifier))? "static " : "");
 
             //Tipo a devolver
             descripcionDelMetodoAImprimir.append(method.getReturnType().getSimpleName());
@@ -115,24 +157,7 @@ public class Ex20DiscoveringInfoAboutAClass {
         return clasesPadres;
     }
 
-    public static void main(String[] args) {
-        String nombreClaseAAnalizar;
-
-        if(args.length > 0){
-            nombreClaseAAnalizar = args[0];
-        }else{
-            nombreClaseAAnalizar = "java.lang.String"; //Ejemplo
-        }
-
-        Class<?> claseAAnalizar;
-
-        try {
-            claseAAnalizar = Class.forName(nombreClaseAAnalizar);
-        } catch (Exception e) {
-            System.out.println(e + "\n\n\n");
-            claseAAnalizar = nombreClaseAAnalizar.getClass();
-        }
-
+    private static void imprimirInformacionClase(Class<?> claseAAnalizar){
         ArrayList<Class<?>> padres = sacarPadres(claseAAnalizar);
 
         System.out.print("\n____________Clases____________" + "\n\t");
@@ -153,6 +178,21 @@ public class Ex20DiscoveringInfoAboutAClass {
         for (Class<?> clasePadre : padres) {
             imprimirMetodos(clasePadre);
         }
+    }
+    
+    public static void main(String[] args) {
+        String nombreClaseAAnalizar = (args.length > 0)? args[0] : null;
 
+        Class<?> claseAAnalizar;
+
+        try {
+            claseAAnalizar = Class.forName(nombreClaseAAnalizar);
+
+            imprimirInformacionClase(claseAAnalizar);
+        } catch (Exception e) {
+            System.out.println(e + "\n\n\n");
+
+            System.exit(-1);
+        }
     }
 }
